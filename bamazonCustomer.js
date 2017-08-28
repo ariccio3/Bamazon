@@ -19,16 +19,11 @@ connection.connect(function(err) {
 });
 
 function displayAll() {
-  connection.query("SELECT id, product_name, price FROM products", function(err, res) {
+  connection.query("SELECT id, product_name, price, stock_quantity FROM products", function(err, res) {
     if (err) throw err;
     for (var i = 0; i < res.length; i++) {
-      console.log("ID: " + res[i].id + "\nProduct: " + res[i].product_name + "\nPrice: " + res[i].price + "\n----------\n");
+      console.log("ID: " + res[i].id + "\nProduct: " + res[i].product_name + "\nPrice: $" + res[i].price + "\n----------\n");
     }
-    // idSelect();
-  
-// }
-
-// function idSelect() {
 
   inquirer.prompt([{
     name: "id",
@@ -60,8 +55,9 @@ function displayAll() {
     var answerQuant = parseInt(answer.quantity);
 
       for (var i = 0; i < res.length; i++) {
-        if (res[i].id === answerID) {
+        if (res[i].id === answerID && res[i].stock_quantity >= answerQuant) {
           console.log("Congrats on buying a " + res[i].product_name);
+          console.log("Your order has been filled. \nYour Total Is: $" + res[i].price + "\n----------\n");
 
           connection.query(
                       "UPDATE products SET ? WHERE ?",
@@ -73,37 +69,17 @@ function displayAll() {
                           id: answerID
                         }
                       ],
-                      function(error) {
-                        if (error) throw err;
-                          for (var i = 0; i < res.length; i++) {
-                            console.log("Your order has been filled. \nYour Total Is: $" + res[i].price + "\n----------\n");
-                          }
-                      }
+                      function(err, res) {
+                        if (err) throw err;
+                        }  
                     );
-
-
-
-            // connection.query("UPDATE products SET stock_quantity=res[i].stock_quantity - answer.quantity WHERE id=answer.id", function(err, res) {
-            //   if (err) throw err;
-
-            //   for (var i = 0; i < res.length; i++) {
-            //     console.log("Your order has been filled. \nYour Total Is: $" + res[i].price + "\n----------\n");
-            //   }
-            // })
-        } else {
+        } else if (res[i].id === answerID && res[i].stock_quantity < answerQuant) {
           console.log("That's more than we have in stock. Try again");
         }
-      }
+      } //for loop end
       connection.end();
     }) //.then close 
   })   // connection.query close  
 } // displayAll function close
 
 
-
-
-// Once the customer has placed the order, your application should check if your store has enough of the product to meet the customer's request.
-// If not, the app should log a phrase like Insufficient quantity!, and then prevent the order from going through.
-// However, if your store does have enough of the product, you should fulfill the customer's order.
-// This means updating the SQL database to reflect the remaining quantity.
-// Once the update goes through, show the customer the total cost of their purchase.
