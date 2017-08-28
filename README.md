@@ -38,9 +38,11 @@ Step 5: If there is not enough in stock you will be informed and urged to try ag
 If you purchase is successfull, the database will update the inventory to reflect your oder:
 
 BEFORE:
+
 ![capture6](https://user-images.githubusercontent.com/29411395/29797294-230b4b9c-8c0b-11e7-88be-4fe0ddde2d49.JPG)
 
 AFTER:
+
 ![capture7](https://user-images.githubusercontent.com/29411395/29797299-2322d4ba-8c0b-11e7-835c-078104751e9c.JPG)
 
 Built With
