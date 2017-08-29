@@ -15,15 +15,15 @@ inquirer
 
 **Step-by-Step**
 
-**Step 1:** In your command line type in node and the javascript filename: bamazonCustomer.js like this and hit 'enter':
+**Step 1:** In your command line type in node and the javascript filename: bamazonCustomer.js like this and click 'enter':
 
 ![capture1](https://user-images.githubusercontent.com/29411395/29797293-23083b3c-8c0b-11e7-8004-8ec96fef9a21.JPG)
 
-**Step 2:** On the screen you will see a list of the available products along with their price and ID. Simply type in the ID number of the product you'd like to buy after the prompt on the bottom and hit 'enter':
+**Step 2:** On the screen you will see a list of the available products along with their price and ID. Simply type in the ID number of the product you'd like to buy after the prompt on the bottom and click 'enter':
 
 ![capture2](https://user-images.githubusercontent.com/29411395/29797298-230f12f4-8c0b-11e7-8f8a-bd959f2018a9.JPG)
 
-**Step 3:** You will then be prompted for the number of units you would like to buy. Enter in the amount you'd like and hit 'enter':
+**Step 3:** You will then be prompted for the number of units you would like to buy. Enter in the amount you'd like and click 'enter':
 
 ![capture3](https://user-images.githubusercontent.com/29411395/29797297-230eff1c-8c0b-11e7-9014-a6f260ca4449.JPG)
 
@@ -35,7 +35,7 @@ inquirer
 
 ![capture5](https://user-images.githubusercontent.com/29411395/29797296-230f09b2-8c0b-11e7-98ce-ac2a4f4fb811.JPG)
 
-If you purchase is successfull, the database will update the inventory to reflect your oder:
+If your purchase is successfull, the database will update the inventory to reflect your order:
 
 BEFORE:
 
@@ -52,6 +52,8 @@ In the Manager view you can view the products for sale, low inventory, increase 
 **Step-by-Step**
 
 **Step 1: View all products for sale** In your command line type in node and the javascript filename: bamazonManager.js like this and click 'enter'. Then choose "View Products for Sale" in the list and click 'enter':
+
+![menu](https://user-images.githubusercontent.com/29411395/29811517-9f9ab5d8-8c58-11e7-8556-cdd4a381e234.JPG)
 
 ![all products](https://user-images.githubusercontent.com/29411395/29810606-4ff137c6-8c55-11e7-82fa-6e0c1a6f5cd6.JPG)
 
