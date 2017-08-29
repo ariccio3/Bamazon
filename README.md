@@ -45,7 +45,8 @@ AFTER:
 
 ![capture7](https://user-images.githubusercontent.com/29411395/29797299-2322d4ba-8c0b-11e7-835c-078104751e9c.JPG)
 
-**Challenge #2: Manager View**
+# Challenge #2: Manager View**
+
 In the Manager view you can view the products for sale, low inventory, increase the inventory and add products to the data base.
 
 **Step-by-Step**
