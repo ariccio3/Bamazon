@@ -1,4 +1,4 @@
-# Bamazon
+# Bamazon Challenge #1: Customer View
 
 This is a "Amazon-like" app that has a product database/table that stores the product name, dept, price and quantity. In node, simply enter the product ID you are interested and the number of units you'd like to buy. The app will update the quntity in the data base to count for the units you purchased.
 
@@ -44,6 +44,31 @@ BEFORE:
 AFTER:
 
 ![capture7](https://user-images.githubusercontent.com/29411395/29797299-2322d4ba-8c0b-11e7-835c-078104751e9c.JPG)
+
+**Challenge #2: Manager View**
+In the Manager view you can view the products for sale, low inventory, increase the inventory and add products to the data base.
+
+**Step-by-Step**
+
+**Step 1: View all products for sale** In your command line type in node and the javascript filename: bamazonManager.js like this and click 'enter'. Then choose "View Products for Sale" in the list and click 'enter':
+
+![all products](https://user-images.githubusercontent.com/29411395/29810606-4ff137c6-8c55-11e7-82fa-6e0c1a6f5cd6.JPG)
+
+**Step 2: View low inventory** Choose "View Low Inventory" in the list and click 'enter':
+
+![low inventory](https://user-images.githubusercontent.com/29411395/29810607-4ff43d86-8c55-11e7-895f-f2262e9bc3a5.JPG)
+
+**Step 3: Add to Inventory** Choose "Add to Inventory" in the list and click 'enter'. You will be prompted for the id and quantity you want to update:
+
+![add to inventory](https://user-images.githubusercontent.com/29411395/29810608-4ff47364-8c55-11e7-90e8-a5cccda87201.JPG)
+
+**Step 4: Add New Product** Choose "Add New Product" in the list and click 'enter'. You will be prompted for the product name, department name, price and quantity of the product you'd like to add to the data base:
+
+![add product](https://user-images.githubusercontent.com/29411395/29810605-4feb8bb4-8c55-11e7-86bf-4ba32a2d758e.JPG)
+
+**Step 5:** The data base is updated with the product you added!
+
+![product added](https://user-images.githubusercontent.com/29411395/29810604-4feb5ce8-8c55-11e7-9ff2-dcc6ee41f747.JPG)
 
 **Built With**
 
