@@ -32,8 +32,7 @@ function displayAll() {
     validate: function(value) {
       if(!isNaN(value)) {
         return true;
-        
-      }
+        }
         console.log("Please enter a valid number")
         idSelect();
     }
@@ -44,7 +43,6 @@ function displayAll() {
     validate: function(value) {
       if(!isNaN(value)) {
         return true;
-        
       }
         console.log("Please enter a valid number")
         idSelect();
